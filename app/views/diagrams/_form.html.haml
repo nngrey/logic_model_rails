@@ -2,5 +2,5 @@
   = f.inputs do
     = f.input :name
   = f.actions do
-    = f.action :submit, :as => :button
-    = f.action :cancel, :as => :link
+    = f.action :submit, :as => :button, :label => "Create", :button_html => { :class => 'btn btn-large btn-primary' }
+    = f.action :cancel, :as => :link, :label => "Cancel"
