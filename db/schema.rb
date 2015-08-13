@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150808054044) do
+ActiveRecord::Schema.define(version: 20150809170440) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,7 +22,10 @@ ActiveRecord::Schema.define(version: 20150808054044) do
     t.integer  "next_box"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "diagram_id"
   end
+
+  add_index "boxes", ["diagram_id"], name: "index_boxes_on_diagram_id", using: :btree
 
   create_table "diagrams", force: :cascade do |t|
     t.string   "name"
@@ -36,4 +39,5 @@ ActiveRecord::Schema.define(version: 20150808054044) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "boxes", "diagrams"
 end

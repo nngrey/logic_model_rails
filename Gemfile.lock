@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/justinfrench/formtastic.git
+  revision: 2cbc2ba57b83f09427199d069be41c83b30456c6
+  specs:
+    formtastic (3.2.0.pre)
+      actionpack (>= 3.2.13)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -97,6 +104,8 @@ GEM
       railties (>= 3.0.0)
     faker (1.4.3)
       i18n (~> 0.5)
+    formtastic-bootstrap (3.1.1)
+      formtastic (>= 3.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     haml (4.0.6)
@@ -258,6 +267,8 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   faker
+  formtastic (~> 3.0)!
+  formtastic-bootstrap
   haml
   jquery-rails
   jquery-turbolinks

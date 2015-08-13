@@ -15,6 +15,8 @@ gem 'textacular'
 gem 'rest-client'
 gem 'oauth'
 gem 'haml'
+gem 'formtastic', '~> 3.0', :git => 'https://github.com/justinfrench/formtastic.git'
+gem 'formtastic-bootstrap'
 
 group :development do
   gem 'better_errors'
