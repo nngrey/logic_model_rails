@@ -1,4 +1,4 @@
 == README
 
-This was an attempt to build a logic model using rails. We did not get very far. Instead, we are trying to adapt a react kanban app for this purpose.
+This was an attempt to build a logic model using rails. We did not get very far. Instead, we are trying to adapt a react kanban app for this purpose. See https://github.com/nngrey/kanban_app
 
